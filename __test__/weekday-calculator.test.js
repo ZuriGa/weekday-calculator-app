@@ -16,4 +16,9 @@ describe('WeekdayCalculator', () => {
         const dayOfWeek = WeekdayCalculator('1994-11-14');
         expect(dayOfWeek).toBe("Monday");
     });
+
+    test('It should return the day of the week for future dates', () => {
+        const dayOfWeek = WeekdayCalculator('2026-04-16');
+        expect(dayOfWeek).toBe("Thursday");
+    });
 });
