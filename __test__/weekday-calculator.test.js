@@ -11,4 +11,9 @@ describe('WeekdayCalculator', () => {
         const dayOfWeek = WeekdayCalculator('2023-11-32');
         expect(dayOfWeek).toBe("invalid date");
     });
+
+    test('It should return the day of the week for past dates', () => {
+        const dayOfWeek = WeekdayCalculator('1994-11-14');
+        expect(dayOfWeek).toBe("Monday");
+    });
 });
