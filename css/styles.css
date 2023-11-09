@@ -1,17 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #bdfaa5;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    background-color: #fff;
+    background-color: #dff98b;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin: 10% auto;
-    max-width: 400px;
+    max-width: 500px;
     padding: 20px;
 }
 
@@ -34,7 +34,7 @@ input[type="date"] {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #f7ca27;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -44,7 +44,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #f1a81f;
 }
 
 #result {

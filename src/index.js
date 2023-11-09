@@ -1,13 +1,11 @@
+import WeekdayCalculator from './weekday-calculator.js';
 import './../css/styles.css';
-function WeekdayCalculator() {
-    const dateInput = document.getElementById("dateInput").value;
-    const date = new Date(dateInput);
-    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const dayOfWeek = daysOfWeek[date.getDay()];
-    return dayOfWeek;
-}
 
-document.getElementById("calculateButton").addEventListener("click", () => {
-    const result = WeekdayCalculator();
+const calculatorButton = document.getElementById("calculatorButton");
+calculatorButton.addEventListener("click", () => {
+    const dateInput = document.getElementById("dateInput").value;
+    const calculator = new WeekdayCalculator(dateInput);
+    const result = calculator.calculateDayOfWeek();
     document.getElementById("result").textContent = `The day of the week is ${result}.`;
+
 });

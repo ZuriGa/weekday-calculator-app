@@ -21,4 +21,6 @@ describe('WeekdayCalculator', () => {
         const dayOfWeek = WeekdayCalculator('2026-04-16');
         expect(dayOfWeek).toBe("Thursday");
     });
+
+
 });
